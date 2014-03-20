@@ -2,10 +2,10 @@
 #define CONFIGURATION_H
 
 //******************************************************************************************************
-//   This config file was changed for AS220 by Bruce Wattendorf W1BAW bwattendorf@gmail.com
+//   This config file was changed for 3DPPVD by Bruce Wattendorf W1BAW bwattendorf@gmail.com
 //   done for the RI 3D printer group  group build of mendel max printers
 //   the printers have the following but the values are not set here in the firmware. 
-//   See areas in this config file that have AS220 comments for changes I have made.
+//   See areas in this config file that have 3DPPVD comments for changes I have made.
 //      Thermistor 100k NTC 
 //      GT2 Belts
 //      20 Tooth Pulleys http://www.adafruit.com/products/1251
@@ -79,7 +79,7 @@
 #define SERIAL_PORT 0
 
 
-//AS220 changes slowed down the baud rate initialy from 250000 to 115200
+//3DPPVD changes slowed down the baud rate initialy from 250000 to 115200
 // This determines the communication speed of the printer
 //#define BAUDRATE 250000
 #define BAUDRATE 115200
@@ -112,7 +112,7 @@
 // 301 = Rambo
 
 #ifndef MOTHERBOARD
-//AS220 change below default to 7 changed to 33
+//3DPPVD change below default to 7 changed to 33
 #define MOTHERBOARD 33
 #endif
 
@@ -149,7 +149,7 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-//AS220 changed below from default -1 to 1 
+//3DPPVD changed below from default -1 to 1 
 #define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
@@ -348,7 +348,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 
 // default settings 
 
-//AS220 changed the steps per unit default (x,y,z,e) 
+//3DPPVD changed the steps per unit default (x,y,z,e) 
 //default settings {78.7402,78.7402,200.0*8/3,760*1.1}
 // Bruce#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,37.79765654529419,93.3631197}  // default steps per unit for ultimaker
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2015.75,88.9172569}
